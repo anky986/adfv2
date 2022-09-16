@@ -1,0 +1,20 @@
+{
+	"name": "targetlocation",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azureblob_target",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "onprem_migration"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			}
+		}
+	}
+}
