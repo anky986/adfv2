@@ -1,0 +1,20 @@
+{
+	"name": "filesource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem_filesource",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "onprem_migration"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "Sample100.csv"
+			}
+		}
+	}
+}
