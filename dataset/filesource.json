@@ -5,6 +5,11 @@
 			"referenceName": "ls_onprem_filesource",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"file_name": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "onprem_migration"
 		},
@@ -13,7 +18,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "FileServerLocation",
-				"fileName": "Sample100.csv"
+				"fileName": {
+					"value": "@dataset().file_name",
+					"type": "Expression"
+				}
 			}
 		}
 	}

@@ -1,28 +1,15 @@
 {
-	"name": "targetlocation",
+	"name": "blobstorage",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_azureblob_target",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"file_name": {
-				"type": "string"
-			}
-		},
-		"folder": {
-			"name": "onprem_migration"
 		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().file_name",
-					"type": "Expression"
-				},
-				"folderPath": "target",
 				"container": "source"
 			}
 		}
