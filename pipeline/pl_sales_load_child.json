@@ -1,0 +1,29 @@
+{
+	"name": "pl_sales_load_child",
+	"properties": {
+		"parameters": {
+			"id": {
+				"type": "string"
+			},
+			"job_name": {
+				"type": "string"
+			},
+			"stg_table": {
+				"type": "string"
+			},
+			"target_table": {
+				"type": "string"
+			},
+			"proc_name": {
+				"type": "string"
+			},
+			"source_folder": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "sales_load"
+		},
+		"annotations": []
+	}
+}
