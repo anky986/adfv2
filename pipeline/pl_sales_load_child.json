@@ -77,7 +77,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Filter1').output",
+						"value": "@activity('Filter1').output.value",
 						"type": "Expression"
 					},
 					"activities": [
