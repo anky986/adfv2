@@ -1,0 +1,28 @@
+{
+	"name": "ds_onprems_getmetadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem_filesource",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folder_name": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "sales_load"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"folderPath": {
+					"value": "@concat('SH','/',dataset().folder_name)",
+					"type": "Expression"
+				}
+			}
+		}
+	}
+}
